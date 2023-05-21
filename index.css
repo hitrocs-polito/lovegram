@@ -1,0 +1,146 @@
+.body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 100px;
+}
+
+.logo{
+    width: 82px;
+    height: 42px;
+}
+
+
+.main-section h3{
+    font-family: 'Poppins', sans-serif;    
+    color: #E5E5E5;
+}
+
+.header-icons{
+    cursor:pointer;
+    width: 100%;
+    height: 34px;
+    margin: 24px auto;
+}
+
+.main-photo{
+    width: 100%;
+    height: 500px;
+    border-radius: 15px;
+    margin: 0 auto;
+}
+
+.main-section {
+    position:relative;    
+}
+
+.user-info{
+    position: absolute;
+    bottom: 30px;   
+    left: 10px; 
+    padding: 5px 5px;
+    background-color: rgba(255, 255, 255, 0.397);
+    font-size: 22px;
+    border-radius: 10px;
+}
+
+.user-info h3, p{
+    margin: 0 0 17px 12px;
+    font-family: 'Poppins', sans-serif;    
+    color: #E5E5E5;
+}
+
+.user-info h3{
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+
+.user-info p{
+    font-weight:400;
+    font-size: 18px;
+    margin-bottom: 0px;
+    margin-top: 0;
+}
+
+.like-cross-button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    column-gap: 24px;
+}
+
+.like-cross{
+    cursor:pointer;
+    margin: 24px 0;
+    padding: 10px;
+    border: none;
+    background-color: FFFFFF;
+    border-radius: 50%;
+    box-shadow: 0px 8px 3px -2px rgba(0,0,0,0.44);
+    -webkit-box-shadow: 0px 8px 3px -2px rgba(0,0,0,0.44);
+    -moz-box-shadow: 0px 8px 3px -2px rgba(0,0,0,0.44);
+}
+
+#rejected:hover{
+    background-color: rgba(255, 208, 224, 0.42);
+}
+
+#liked:hover{
+    background-color: rgba(151, 235, 208, 1);
+}
+
+.liked-comment,
+.rejected-comment{
+    width: 180px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+    left: 10px;
+    top: 50.96px;
+    border-radius: 10.3807px;
+    transform: rotate(-30deg);
+}
+
+.liked-comment span,
+.rejected-comment span {
+    user-select: none;
+    border-radius: 12px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+    line-height: 95px;
+}
+
+.liked-comment{
+    display: none;
+    color: rgba(110, 242, 242, 1);
+    border: 9px solid rgba(110, 242, 242, 1);    
+}
+
+.rejected-comment{
+    display: none;
+    color: rgba(249, 101, 92, 1);
+    border: 9px solid rgba(249, 101, 92, 1); 
+}
+
+.rejected-comment span{
+    font-size: 60px;
+}
+
